@@ -1,236 +1,31 @@
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i,700&display=swap');
 
-body {
-    background-color: rgb(175, 175, 175);
-    font-family: 'Merriweather Sans', arial, sans-serif;
-    font-size: 1rem;
-    min-width: 320px; 
-    background-image: url(openflair.jpg);
-        background-position: center;
-        background-attachment: fixed; 
-    margin: auto; 
-}
+@import url(basis.css);
 
-h1 {font-size: 2.5rem;
-    font-variant: small-caps;}
-h2 {font-size: 2rem; font-variant: small-caps;}
-h3 {font-size: 1.75rem; font-variant: small-caps;}
-h4 {font-size: 1.5rem;}
+@import url(layout.css);
 
-.site-header  {
-    background-color: rgb(166, 10, 10);
-    padding: 8px;
-    color: black;
-    text-align: center;
-}
+@import url(navi-responsive.css);
 
-.site-nav-list,
-.site-footer {
-    background-color: rgba(166, 10, 10);
-    padding: 0 0 0 2em;
-    box-shadow: 4px 4px 10px 10px rgba(5, 238, 255, 0.673);
-    border: 8px double white;
-}
+@import url(content.css);
 
-.site-footer {font-size: smaller;}
+@import url(formulare.css);
 
-.site-nav-list li {
+@import url(drucken.css);
 
-    display: inline;
-    margin-right: 1em;
-}
-
-main {line-height: 1.5;
-                
-
-
-
-}
-.Introtext {
-	margin: auto;
-	max-width: 720px;
-	padding: 1em;
-	color: white;
-	background-color: rgba(5, 5, 5, 0.7);
-	box-shadow: 1px 1px 100px 2px white;
-	border-radius: 50px;
-}
-
-main a:link {
-    color: blue;
-}
-main a:visited {
-    color: rgb(0, 184, 216);
-}
-main a:hover,
-main a:focus {
-    color: rgb(255, 183, 0);
-    font-size: 1.25rem;
-}
-main a:active {
-    color: rgba(255, 0, 0, 0.865);
-    font-size: 1.5rem;
-}
+@import url(navi-meta.css);
 
 
 
 
 
 
-.site-nav-list a,
-.site-footer a {
-
-    color: white;
-    text-decoration: none;
-
-}
-.site-nav-list a.you-are-here
-{text-decoration: underline;}
-
-.headtitle,
-.titlepic,
-.slogan {
-    margin-bottom: 0;
-    color: white;
-}
-
-.wholeinfoboxes {
-    text-align: center;
-}
-
-.infoboxes {
-
-    text-align: center;
-    padding: 1em;
-    margin-bottom: 1em;
-    background-color: rgb(166, 10, 10);
-    display: inline-flex;
-    box-shadow: 4px 4px 10px 10px rgba(5, 238, 255, 0.673);
-    border: 8px double white;
-}
-
-.infobox {
-    padding: 1em;
-    margin: 1em;
-    background-color: rgb(175, 175, 175);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.502);
-}
-
-.sociallinks {
-    padding: 1em;
-    background-color: rgb(231, 79, 79);
-}
-.socialme {
-    padding: 1em;
-    margin: 1em;
-    background-color: rgb(175, 175, 175);
-}
-
-.socialdk {
-    padding: 1em;
-    background-color: rgb(166, 10, 10);
-    color: white;
-    border: 8px double white;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.502);
-}
-
-.tourdates {
-    
-    text-align: center;
-    margin: auto;
-	max-width: 720px;
-	padding: 1em 1em 1em 1em;
-	color: white;
-	background-color: rgba(5, 5, 5, 0.7);
-	box-shadow: 1px 1px 100px 2px white;
-	border-radius: 50px;
-}
-
-address {
-    text-align: center;
-    font-style: normal;
-    text-align: center;
-    margin: auto;
-	max-width: 720px;
-	padding: 1em 1em 1em 1em;
-	color: white;
-	background-color: rgba(5, 5, 5, 0.7);
-	box-shadow: 1px 1px 100px 2px white;
-	border-radius: 50px;
-}
-
-.About {
-    text-align: left;
-    margin: auto;
-	max-width: 720px;
-	padding: 1em 1em 1em 1em;
-	color: white;
-	background-color: rgba(5, 5, 5, 0.7);
-	box-shadow: 1px 1px 100px 2px white;
-    border-radius: 50px;
-}
-
-.tabelle {
-    margin-bottom: 1em;
-    text-align: center;
-}
-
-.tabellenbox {
-    text-align: center;
-}
-
-span.fans {
-    color:white;
-}
 
 
 
 
 
-.reports {
-    padding: 1em;
-    text-align: center;
-    background-color:  rgba(166, 10, 10, 0.475);
-    margin: 1em 0;
-}
 
-.report {
-    padding: 1em;
-    margin-bottom: 1em;
-    background-color: rgb(175, 175, 175);
-    border-radius: 40px 40px 40px 4px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.53);
 
-}
-.Newsarticle {
-    color: white;
-    padding: 1em;
-    text-align: center;
-    background-color:  rgba(166, 10, 10, 0.475);
-    margin: 1em 0;
-}
-.Linklisten {
-    color:white;
-    text-align: left;
-   
-}
 
-label {
-    display: block;
-}
 
-form div {
-    margin-bottom: 1em;
-}
-
-.contactformsection {
-    color: white;
-    padding: 1em;
-    text-align: center;
-    background-color:  rgba(166, 10, 10, 0.475);
-    margin: 1em 0;
-}

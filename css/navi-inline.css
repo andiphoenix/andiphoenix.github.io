@@ -1,0 +1,44 @@
+@media screen {
+
+    .site-nav-list a {
+    
+        color: white;
+        text-decoration: none;
+    
+    }
+    .site-nav-list a.you-are-here
+    {text-decoration: underline;}
+
+    .site-nav-list li {
+
+        display: inline;
+        margin-right: 1em;
+    }
+    .site-nav-list {
+        background-color: rgba(166, 10, 10);
+        padding: 0 0 0 2em;
+        box-shadow: 4px 4px 10px 10px rgba(5, 238, 255, 0.673);
+        border: 8px double white;
+    }
+
+    .site-nav-list a.you-are-here {
+        text-decoration: underline;
+        background-color: rgb(182, 85, 85); 
+        color: white;
+    }
+    .site-nav-list a:hover,
+    .site-nav-list a:focus {
+        text-decoration: underline;
+        background-color: rgb(182, 85, 85); 
+        color: white;
+    }
+
+    .site-nav-list a:active {
+        text-decoration: underline;
+        background-color: rgb(37, 230, 244); 
+        color: white;
+
+
+}
+
+} /* Ende @media */

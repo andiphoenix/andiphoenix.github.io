@@ -1,0 +1,137 @@
+@media screen {
+
+
+    .menubutton {
+
+        display: block;
+        background-color: rgb(181, 49, 49);
+        color: white;
+
+        font-family: inherit;
+        font-size: inherit;
+        text-align: center;
+
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        margin: 0 1rem 0.5rem 1rem;
+
+        box-shadow: 0.5px 0.5px 30px 5px rgba(5, 238, 255, 0.673);
+    }
+
+    .site-nav > .wrapper {
+        padding: 0 1rem;
+    }
+
+
+    .site-nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0.5em;
+
+        background-color: rgba(166, 10, 10);
+        box-shadow: 1px 1px 20px 5px rgba(5, 238, 255, 0.673);
+        border: 8px double white;
+
+        padding: 0.5rem 0 0 0;
+        margin-bottom: 1em;
+    }
+
+    .site-nav-list {
+        display: flex;
+
+        padding: 0;
+        margin: 0;
+
+        flex-direction: row;
+       /* flex-wrap: wrap; */
+        flex-flow: column;
+
+    }
+
+    .site-nav-list a {
+        
+        display: block;
+        color: white;
+        text-decoration: none;
+        min-width: 80px;
+       /* text-align: center; */
+        background-color: rgba(166, 10, 10);
+        padding: 0.5rem 1rem;
+
+    }
+
+    .site-nav-list a.you-are-here {
+        text-decoration: underline;
+        background-color: rgb(182, 85, 85); 
+        color: white;
+    }
+    .site-nav-list a:hover,
+    .site-nav-list a:focus {
+        text-decoration: underline;
+        background-color: rgb(182, 85, 85); 
+        color: white;
+    }
+
+    .site-nav-list a:active {
+        text-decoration: underline;
+        background-color: rgb(37, 230, 244); 
+        color: white;
+    }
+
+    .site-nav-list li {
+      /*  display: inline-block; */
+        list-style: none;
+    }
+    
+    .site-nav-list {
+       max-height: 0;
+       overflow:hidden;
+    }
+
+    /* Die Navigationsliste ein und ausblenden lassen */
+
+    .show-menu + .site-nav-list {
+        max-height: 100rem;
+        transition: 1000ms ease-in-out;
+    }
+
+    /* Media Query hinzufügen für breite Bildschirme */
+
+    @media screen and (min-width: 768px) {
+
+        .menubutton { display: none; }
+
+        .site-nav-list {
+            max-height: none;
+            overflow: auto;
+            transition: none;
+
+            flex-flow: row;
+            flex-wrap: wrap;
+        }
+
+        .site-nav { padding: 0; }
+        .site-nav > .wrapper { padding: 0 1rem; }
+
+        .site-nav-list li { 
+            display: inline-block; 
+            flex: 1;
+            text-align: center;
+            border-right: 1px solid rgba(5, 238, 255, 0.673);
+        }
+
+        .site-nav-list li:first-child {
+
+            border-left: 1px solid rgba(5, 238, 255, 0.673);
+        }
+
+
+    }
+
+
+
+
+
+
+
+} /* Ende @media */

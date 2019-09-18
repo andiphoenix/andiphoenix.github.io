@@ -1,0 +1,204 @@
+@media screen {
+
+    html {
+        background-color: black;
+        background-image: url(htmlbgi.jpg);
+        background-position: center;
+        background-attachment: fixed; 
+       
+    }
+
+
+    body {
+        min-height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+        min-width: 240px;
+        max-width: 960px;
+        
+        
+    }
+
+
+
+
+
+
+    .site-header  {
+        background-color: rgb(166, 10, 10);
+        padding: 1rem 1rem 0 1rem; 
+        color: black;
+        text-align: center;
+        min-width: 100%;
+    }
+
+    .site-footer a {
+    
+        color: white;
+        text-decoration: none;
+    }
+
+    .site-footer {
+        background-color: rgba(166, 10, 10);
+        padding: 0;
+        box-shadow: 1px 1px 20px 5px rgba(5, 238, 255, 0.673);
+        border: 8px double white;
+        margin-top: auto;
+    }
+    
+    .site-footer {font-size: smaller;}
+   
+    .headtitle {
+        text-align: center;
+    
+    }
+
+    /* Headtitle Responsive zur Bildschirmgröße machen */
+
+    .headtitle img {
+        width: 100%;
+
+    }
+
+
+    .headtitle,
+    .titlepic,
+    .slogan {
+       
+        margin-bottom: 0;
+        color: white;
+ 
+    }
+
+    .wrapper {
+        min-width: 320px;
+        max-width: 720px;
+        padding: 0 1rem;
+        margin: 0 auto;
+
+    }
+
+    .networklist {
+        padding: 0;
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 0;
+    }
+
+    .networklist li {
+        list-style: none;
+        flex: 1;
+        min-width: 140px;
+        padding: 1rem;
+    }
+
+    .networklist li h3 {
+        font-size: 1.5rem;
+    }
+
+@media screen and (min-width: 600px) {
+    
+
+    .news .wrapper .Newsarticle {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        grid-gap: 1rem;
+    }
+    .news .wrapper .news-intro {
+        grid-column: 1/4;
+    }
+
+    .contact .site-content .wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 0.3fr 5fr;
+        grid-gap: 1rem;
+    }
+    .capital {
+        grid-column:1/3;
+    }
+}
+    main a:link {
+        color: blue;
+    }
+    main a:visited {
+        color: rgb(0, 184, 216);
+    }
+    main a:hover,
+    main a:focus {
+        color: rgb(255, 183, 0);
+        
+    }
+    main a:active {
+        color: rgba(255, 0, 0, 0.865);
+      
+    }
+    
+  /* Double Sqaures nach jedem Link 
+   main a[href^="http"]::after {
+        content: "\29C9"
+    } */
+
+    .Linklisten h2 {
+        text-align: center;
+    }
+
+/* CSS für Flex Infoboxen */
+
+    .flexinfoboxes {
+        margin: 1rem;
+        color: white;
+        padding: 1rem;
+    }
+
+    .flex-info-list {
+        display: flex;
+    
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .flex-info-list li{
+        list-style: none;
+        padding: 1rem;
+        margin: 0.5rem auto;
+        text-align: center;
+        border: 8px double white;
+        background-color: rgb(175, 175, 175);
+        background-image: url(htmlbgismall.jpg);
+        box-shadow: 4px 4px 10px 10px rgba(5, 238, 255, 0.673);
+    }
+
+    /* CSS für gefloatete Bilder */
+
+    .bildlinks {
+        float: left;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .bildrechts {
+        float: right;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 376px) {
+        .bildrechts {
+            float: none;
+            text-align: center;
+    }
+
+    }
+
+
+/* Nur für gefloatete Elemente, um den Text kreisförmig um das Element zu gestalten */
+
+    .floatkreis {
+        shape-outside: circle(50%);
+    }
+
+   
+} /* Ende @media */

@@ -1,0 +1,79 @@
+@media screen {
+
+    label {
+        display: block;
+        cursor: pointer;
+        flex: 0 0 9rem;
+    }
+    
+    form div {
+        margin-bottom: 1em;
+        display: flex;
+        flex-flow: wrap;
+    }
+    
+   .contactformsection {
+        color: white;
+        padding: 1rem;
+        text-align: left;
+        background-color:  rgba(166, 10, 10, 0.475);
+        margin: 1em 0;
+        flex: 1;
+    }   
+
+    .contactformsection input[type="text"],
+    .contactformsection input[type="email"],
+    .contactformsection textarea {
+        color: white;
+        padding: 1rem;
+        text-align: center;
+
+        margin: 0.5em 0;
+        border: 1px solid #ddd;
+        border-radius: 0.25rem;
+        width: 25rem;
+    }
+
+    .contactformsection textarea {
+        max-width: 100%;
+        min-height: 8rem;
+    }
+
+    .contactformsection button {
+        font-size: inherit;
+        font-family: inherit;
+        letter-spacing: 1px;
+        cursor: pointer;
+        color: white;
+        background-color: rgba(5, 5, 5, 0.7);
+        box-shadow: 1px 1px 100px 2px white;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        flex: 1;
+    }
+    .contactformsection button:hover,
+    .contactformsection button:focus {
+        background-color: turquoise;
+        color: red;    
+    
+    }
+    .contactformsection button:active {
+        background-color: red;
+        color: turquoise;
+    }
+    .contactbox {
+        text-align: center;
+        font-style: normal;
+        text-align: center;
+        margin: 1rem auto;
+        max-width: 720px;
+        padding: 1em 1em 1em 1em;
+        color: white;
+        background-color: rgba(5, 5, 5, 0.7);
+        box-shadow: 1px 1px 100px 2px white;
+        border-radius: 50px;
+        background-image: url(htmlbgismall.jpg);
+    }
+
+    
+}

@@ -1,0 +1,62 @@
+@media screen {
+
+/* zum Anfang um aus Content-Boxen Border-Boxen zu machen */
+html {
+    box-sizing: border-box;
+    overflow-y: scroll;
+
+    /* verhindert Zoom nach Wechsel von Portrait zu Landscape */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+*,*:before,*:after {box-sizing: inherit;}
+
+header, nav, main, footer,
+section, article, aside,
+figcaption, figure {
+    display: block;
+}
+
+
+
+/* zum Anfang um Collapsing Margins zu verhindern */
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, blockquote {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+/* Klasse zum Verstecken von Überschriften */
+.visually-hidden {
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+body {
+    background-color: rgb(175, 175, 175);
+    font-family: 'Merriweather Sans', arial, sans-serif;
+    font-size: 1rem;
+
+    background-image: url(openflair.jpg);
+    background-position: center;
+    background-attachment: fixed; 
+
+    
+
+}
+
+h1 {font-size: 2.5rem;
+    font-variant: small-caps;}
+h2 {font-size: 2rem; font-variant: small-caps;}
+h3 {font-size: 1.75rem; font-variant: small-caps;}
+h4 {font-size: 1.5rem;}
+
+
+} /* Ende @media */
