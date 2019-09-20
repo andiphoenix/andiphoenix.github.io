@@ -29,12 +29,27 @@
         top: 0.5em;
 
         background-color: rgba(166, 10, 10);
-        box-shadow: 1px 1px 20px 5px rgba(5, 238, 255, 0.673);
+     /*   box-shadow: 1px 1px 20px 5px rgba(5, 238, 255, 0.673); */
         border: 8px double white;
 
         padding: 0.5rem 0 0 0;
         margin-bottom: 1em;
+
+        animation-name: lights;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
+
+    @keyframes lights {
+        0%   {box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.673);}
+        100%  {box-shadow: 1px 1px 20px 5px rgba(5, 238, 255, 0.673);} }
+
+    @keyframes lights2 {
+            0%   {box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.673);}
+            100%  {box-shadow: 1px 1px 20px 5px rgb(255, 255, 255);} }
+
 
     .site-nav-list {
         display: flex;

@@ -42,9 +42,14 @@
     .site-footer {
         background-color: rgba(166, 10, 10);
         padding: 0;
-        box-shadow: 1px 1px 20px 5px rgba(5, 238, 255, 0.673);
+       /* box-shadow: 1px 1px 20px 5px rgba(5, 238, 255, 0.673); */
         border: 8px double white;
         margin-top: auto;
+        animation-name: lights;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
     
     .site-footer {font-size: smaller;}
@@ -192,6 +197,16 @@
     }
 
     }
+
+    /* Clear Code statt Overflow:hidden, für jedes gefloatete Bild 
+
+  zB.   article:after {
+        content:"";
+        display: table;
+        clear: both;
+    }
+*/
+
 
 
 /* Nur für gefloatete Elemente, um den Text kreisförmig um das Element zu gestalten */

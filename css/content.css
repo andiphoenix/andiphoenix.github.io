@@ -24,10 +24,15 @@
         border: 8px double white;
         background-color: rgb(175, 175, 175);
         background-image: url(htmlbgismall.jpg);
-        box-shadow: 4px 4px 10px 10px rgba(5, 238, 255, 0.673);
+     /*   box-shadow: 4px 4px 10px 10px rgba(5, 238, 255, 0.673); */
         display: flex;
         flex-flow: column;
 
+        animation-name: lights;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
 
     .grid-list-box li p:last-child {margin-top: auto; }
@@ -228,9 +233,12 @@
       }
 
 
-     /* .icon-bar li {
-        display: inline-block; 
-      }*/
+      .icon-bar ul li {
+        animation-name: lights2;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; }
   
       /* Style the links in the icon bar */
       .icon-bar a {
@@ -306,9 +314,13 @@
     justify-content: end;
   }
 
- /* .icon-bar li {
-    display: inline-block; 
-  }*/
+  .icon-bar ul li {
+        animation-name: lights2;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; 
+  }
 
   /* Style the links in the icon bar */
   .icon-bar a {
