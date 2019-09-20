@@ -195,8 +195,16 @@
         background-color: rgb(175, 175, 175);
         border-radius: 40px 40px 40px 4px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.53);
-    
+        transition: margin 2s;
     }
+
+    .report:hover {
+        margin: 0 0 1em;
+
+    }
+
+ 
+
 
     .Newsarticle {
         color: white;
@@ -241,11 +249,17 @@
         animation-direction: alternate; }
   
       /* Style the links in the icon bar */
-      .icon-bar a {
+      .icon-bar a, .backdoor a {
         display: block;
         text-align: center;
         color: white;
         padding: 1rem;
+      }
+
+      .backdoor {
+          margin: 2rem auto;
+          max-width: 90px;
+          
       }
   
       /* Farbwerte siehe https://brandcolors.net/ */ 
