@@ -43,7 +43,7 @@
     }
 
     @keyframes lights {
-        0%   {box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.673);}
+        0%   {box-shadow: 1px 1px 15px 1px rgba(5, 238, 255, 0.673);}
         100%  {box-shadow: 1px 1px 20px 5px rgba(5, 238, 255, 0.673);} }
 
     @keyframes lights2 {
