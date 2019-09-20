@@ -40,10 +40,12 @@
     }
 
     .site-footer {
-        background-color: rgba(166, 10, 10);
-        padding: 0;
-       /* box-shadow: 1px 1px 20px 5px rgba(5, 238, 255, 0.673); */
-        border: 8px double white;
+        background: #f3c5bd; /* Old browsers */
+background: -moz-linear-gradient(top,  #f3c5bd 0%, #e86c57 50%, #A60A0A 51%, #ff6600 75%, #A60A0A 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f3c5bd 0%,#e86c57 50%,#A60A0A 51%,#ff6600 75%,#A60A0A 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f3c5bd 0%,#e86c57 50%,#A60A0A 51%,#ff6600 75%,#A60A0A 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
+        border: 4px groove white;
         margin-top: auto;
         animation-name: lights;
         animation-duration: 2s;

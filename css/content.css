@@ -21,7 +21,7 @@
         padding: 1rem;
         margin: 0.5rem auto;
         text-align: center;
-        border: 8px double white;
+        border: 4px groove white;
         background-color: rgb(175, 175, 175);
         background-image: url(htmlbgismall.jpg);
      /*   box-shadow: 4px 4px 10px 10px rgba(5, 238, 255, 0.673); */
@@ -93,13 +93,24 @@
     
     .socialdk {
         padding: 1em;
-        background-color: rgb(166, 10, 10);
+        border: 4px groove white;
         color: white;
-        border: 8px double white;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3c5bd+0,ea2803+26,ea2803+26,e86c57+50,c72200+100 */
+background: #f3c5bd; /* Old browsers */
+background: -moz-linear-gradient(top,  #f3c5bd 0%, #ea2803 26%, #ea2803 26%, #e86c57 50%, #A60A0A 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f3c5bd 0%,#ea2803 26%,#ea2803 26%,#e86c57 50%,#A60A0A 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f3c5bd 0%,#ea2803 26%,#ea2803 26%,#e86c57 50%,#A60A0A 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#A60A0A',GradientType=0 ); /* IE6-9 */
+
         text-align: center;
         margin-top: 1rem;
         margin-bottom: 1rem;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.502);
+        animation-name: lights;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
     
     .tourdates {
@@ -192,7 +203,13 @@
     .report {
         padding: 1em;
         margin-bottom: 1em;
-        background-color: rgb(175, 175, 175);
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
         border-radius: 40px 40px 40px 4px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.53);
         transition: margin 2s;

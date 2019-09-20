@@ -26,6 +26,10 @@ p, ul, ol, blockquote {
     margin-bottom: 1em;
 }
 
+h3, h4, h5 {
+    text-shadow: 10px black;
+}
+
 /* Klasse zum Verstecken von Überschriften */
 .visually-hidden {
     height: 1px;
