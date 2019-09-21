@@ -379,4 +379,60 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 }
 
+    .calculator {
+        width: 400px;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin: 1rem auto;
+        font-size: 1.5rem;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f85032+0,f16f5c+50,f6290c+51,f02f17+71,e73827+100;Red+Gloss+%231 */
+        background: #f85032; /* Old browsers */
+        background: -moz-linear-gradient(left,  #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=1 ); /* IE6-9 */
+
+
+    }
+    .calcscreen {
+        background-color: black;
+        margin: 0.5rem 0;
+        padding: 1rem;
+
+    }
+
+    .calcbuttons {
+        display: grid;
+        grid-template-columns: repeat(4,90px);
+        margin: 1rem;
+        
+        
+    }
+
+    .box {
+        background-color: rgb(191, 191, 191);
+        border: 1px solid black;
+        padding: 1rem;
+
+    }
+
+    .boxC {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .box0 {
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+
+    .countbox {
+        background-color: orange;
+    }
+
+
+
+
  /* Ende @media */
