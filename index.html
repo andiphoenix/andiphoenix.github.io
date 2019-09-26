@@ -24,163 +24,103 @@
 
 </head>
 
+<body>
+    <nav class="nav">
+            <div>
+                <button class="menubutton" onclick="this.classList.toggle('show-menu')"><i
+                        class="fas fa-bars"></i>&nbsp;</button>
+                <ul class="navlist">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#social">Socials</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+    
+                </ul>
+            </div>
+        </nav>
+    <header class="parallax1" id="home">
+        <div class="Logoheader">
+            <span class="logo">
+                <h1>Andi Phoenix</h1>
+                <h4 style="font-size: 1rem;">Front-End Web Developer</h4>
+            </span>
 
-
-<body class="start">
-    <!-- 
-        body besteht aus
-        header
-        nav
-        main
-        footer
-    -->
-
-    <header class="site-header">
-        <div class="wrapper">
-            <h1 class="headtitle">
-                <img src="pics/Logo796.jpg" alt="Andi Phoenix">
-                <!--  Alter Code zum Kleinhalten:
-                    width="320"  
-                    height="175"-->
-            </h1>
-
-            <p class="slogan">Testsite</p>
         </div>
     </header>
+    <article class="article1">
+        <div class="divarticle">
+            
+            <h2>Hello</h2>
+            <p>I am a Berlin-based Front-End Wed Developer:<br>Self-taught and bootcamp certified.<br>
+                Portfolio is following shortly.<br>
+                Meanwhile please check my socials and get in touch with me. <br>
 
-    <nav class="site-nav">
-        <div class="wrapper">
-            <button class="menubutton" onclick="this.classList.toggle('show-menu')"><i
-                    class="fas fa-bars"></i>&nbsp;Menu</button>
-            <ul class="site-nav-list">
-                <li><a href="index.html" class="you-are-here">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-
-            </ul>
-        </div>
-    </nav>
-
-    <main class="wrapper">
-        <section class="Introtext wrapper">
-            <h2>Be my witness <i class="far fa-eye"></i></h2>
-
-
-
-
-            <p>This is my very first website about me and what I'm doing, built w/ <strong>VS Code</strong></p>
-            <p>So watch out, I'm gonna steal</p>
-            <ul>
-                <li> yo <em>wife</em></li>
-                <li>and yo <em>kids</em></li>
-                <li>and yo mothafuckin <em>husbands</em> too, together with
-                    <ol>
-                        <li>his money</li>
-                        <li>his status</li>
-                        <li>his dick</li>
-                    </ol>
-                </li>
-            </ul>
-            <p>Check my band's Instagram <a href="https://instagram.com/desasterkids" target="_blank">Desasterkids</a>
             </p>
-            <p>Cheers</p>
-
-            <blockquote>
-                <p>Find what you love and let it kill you</p>
-                <footer>
-                    <cite>&mdash; Charles Bukowski</cite>
-                </footer>
-            </blockquote>
-        </section>
-        <div class="socialdk">
-
-            <h3><strong>Desasterkids Network</strong></h3>
-            <ul class="networklist">
-                <li>
-                    <a href="https://facebook.com/desasterkids" target="_blank">
-                        <span style="font-size: 3rem;">
-                            <i class="fab fa-facebook fa-2x"></i>
-                        </span>
-                    </a>
-                    <h3 style="margin-bottom:0;">Facebook</h3>
-
-                </li>
-                <li>
-                    <a href="https://instagram.com/desasterkids" target="_blank">
-                        <span style="font-size: 3rem;">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </span>
-                    </a>
-                    <h3 style="margin-bottom:0;">Instagram</h3>
-
-                </li>
-                <li>
-                    <a href="https://desasterkids.com" target="_blank">
-                        <span style="font-size: 3rem;">
-                            <i class="fas fa-desktop fa-2x"></i>
-                        </span>
-                    </a>
-                    <h3 style="margin-bottom:0;">Website</h3>
-
-                </li>
-            </ul>
-
         </div>
-        <article class="tourdates" style="text-align: left; padding-bottom: 2em;">
+    </article>
+    <div class="parallax2">
+        <div class="text2">
+            <blockquote>
+                <p style="margin: 0;">Find what you love and let it kill you</p>
+                    <footer>
+                        <cite>&mdash; Charles Bukowski</cite>
+                    </footer> 
+                </div>       
+    </div>
+    <section class="sectionsocial" id="social">
+                
+        <aside class="icon-bar">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/andreas-kirchg%C3%A4ssner-018b59109/" class="linkedin"><i
+                                class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li><a href="https://www.twitter.com/andiphoenix" class="twitter"><i class="fab fa-twitter fa-2x"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/andiphoenix" class="facebook"><i
+                                class="fab fa-facebook fa-2x"></i></a></li>
+                </ul>
+        
+            </aside>
 
-            <header class="tourdatesheader" style="text-align: center;">
-                <h2>SUPERHUMAN <del>1.0</del> <ins style="text-decoration:none; color: red;">2.0</ins> Tourdates</h2>
-                <p class="tourinfo">
-                    <span class="autor">Andi Phoenix</span> |
-                    <time datetime="2019-05-18">18. Mai 2019</time>
-                </p>
-            </header>
-            <ul class="tourdateblock" style="text-align:left; margin: auto; max-width: 280px;">
-                <li><time datetime="2019-05-09T20:00">09/05/2019 - Neunkirchen</time></li>
-                <li><time datetime="2019-05-10T20:00">10/05/2019 - Nürnberg</time></li>
-                <li><time datetime="2019-05-11T20:00">11/05/2019 - Karlsruhe</time></li>
-                <li><time datetime="2019-05-16T20:00">16/05/2019 - Lingen</time></li>
-                <li><time datetime="2019-05-17T20:00">17/05/2019 - Alfeld</time></li>
-                <li><time datetime="2019-05-18T20:00">18/05/2019 - Visbek</time></li>
-                <li><time datetime="2019-05-24T20:00">24/05/2019 - Münster</time></li>
-                <li><time datetime="2019-05-25T20:00">25/05/2019 - Düsseldorf</time></li>
-            </ul>
+        </section>
+    <div class="parallax3">
+            <div class="text3">                
+                <p style="letter-spacing: 10px; margin: 0;">Self-Made</p>           
+            </div>       
+    </div>
+    <article class="article" id="about">
+            <div class="divarticle">                
+                <h2 class="visually-hidden">Hello</h2>
+                <p>My name is Andi Phoenix.<br><br>
+                    Born in Kyrgyzstan and raised in a small city called Detmold, NRW.<br>
+                    I used to be a calm and shy boy in my teenage times,<br>
+                    only in video games I've felt comfortable enough to be me and let out<br>
+                    all the thoughts that defined me.<br>
+                    This changed dramaticaly when I moved to Cologne to study Event-Management.<br>
+                    My interest in Games vanished instantly when I found out that I am actually into guys
+                    and since then my self-esteem developed in immense speed.<br>
+                    I've found the love of my life quickly and so I became the person I am today.<br>
+                    I've been playing music instruments since I was eight years old<br>
+                    and I've been playing in bands for 10 years now.<br>
+                    I sing in my band "Desasterkids" for six years now and we are on tour regularly.<br><br>
+                    Some weeks ago I decided to learn web programming because I was unhappy with<br>
+                    the way my career was going and I've felt like I needed to learn something<br>
+                    completly new and start a new chapter in my life.<br>
+                    This is my very first website. The beginning of a new path. A new life.<br>
+                    My legacy.</p>
+            </div>
         </article>
 
-        <div class="gridinfoboxes">
-            <ul class="grid-list-box">
-                <li>
-                    <a href="news.html"><span style="font-size: 3rem;">
-                            <i class="fas fa-rss"></i>
-                        </span></a>
-                    <h3>News</h3>
-                    <p>All the news about what I do</p>
-                    <p><a href="news.html">News-Site</a></p>
-                </li>
-                <li>
-                    <a href="about.html"> <span style="font-size: 3rem;">
-                            <i class="far fa-address-card"></i>
-                        </span></a>
-                    <h3>About</h3>
-                    <p>Everything you should know about me</p>
-                    <p><a href="about.html">About-Site</a></p>
-                </li>
-                <li>
-                    <a href="Contact.html"><span style="font-size: 3rem;">
-                            <i class="fas fa-at"></i>
-                        </span></a>
-                    <h3>Contact</h3>
-                    <p>This is how you contact me</p>
-                    <p><a href="Contact.html">Contact Info</a></p>
-                </li>
-            </ul>
-        </div>
+    <div class="parallax4">
+            <div class="text3">                
+                <p style="letter-spacing: 10px; margin: 0;">
+                   <strong>Engagement</strong>
+                </p>           
+            </div>       
 
+    </div>        
 
-
-        <article>
-            <h3 style="text-align:center; margin-top: 2rem;" id="contact">Contact</h3>
+    <article>
+            <h3 style="text-align:center; margin-top: 3rem;">Contact</h3>
             <address style="margin-bottom: 3em;">
                 Andreas Kirchgässner <br>
                 Pfarrstr. 118<br>
@@ -191,63 +131,51 @@
 
 
         </article>
+    <div class="parallax5">
+            <div class="text3">                
+                <p style="margin: 0; color: white;">Let's have a chat!</p>           
+            </div>       
 
+    </div>    
+    <section class="capital"><h3 class="visually-hidden" id="contact">Contact</h3></section>
 
+    <section class="contactformsection">
+            <form class="kontaktformular" action="" method="post">
+                   <div style="flex-flow:column;">
+                        <h3 class="visually-hidden">Do you have any tips for me?</h3>
+                        <p>Shoot me a message and let's talk!<br>
+                            There is always a solution for every issue.</p>
+                    </div>
+                    <div>
+                        <label for="username">Your name: </label>
+                        <input type="text" id="username" name="username"/>
+                    </div>
+                    <div>
+                        <label for="mail">Your e-mail: </label>
+                        <input type="email" id="mail" name="mail"/>
+                    </div>
+                    <div>
+                        <label for="message">Your message: </label>
+                        <textarea id="message" name="message" cols="20" rows="5"></textarea>
+                    </div>
+                    <div class="submitbuttondiv">
+                        <button class="submit" type="submit" value="sendout">Submit</button>
+                    </div>
+                </form>
 
-
-        <section class="reports">
-            <h2><span class="fans">What my fans say about me</span></h2>
-            <p><span class="fans">If you ask someone about me, this is what they probably gonna tell</span></p>
-
-            <blockquote class="report">
-                <h3>Talented and handsome</h3>
-                <p>He's so cute and amazing on stage, every show is bangin'!</p>
-                <footer>&mdash; Tini Winie</footer>
-            </blockquote>
-            <blockquote class="report">
-                <h3>Heartwarming</h3>
-                <p>I have never met someone being so brutal on stage,<br>
-                    but so gentle in person before. </p>
-                <footer>&mdash; Sophia</footer>
-            </blockquote>
-            <blockquote class="report">
-                <h3>Inspiring</h3>
-                <p>Every damn time I see him live, I want to start my own band and <br> make a change in this world,
-                    too.</p>
-                <footer>&mdash; Ilkay</footer>
-            </blockquote>
-
-        </section>
-
-
-
-
-
-
-    </main>
-    <aside class="icon-bar">
-        <ul>
-            <li><a href="https://www.linkedin.com/in/andreas-kirchg%C3%A4ssner-018b59109/" class="linkedin"><i
-                        class="fab fa-linkedin fa-2x"></i></a></li>
-            <li><a href="https://www.twitter.com/andiphoenix" class="twitter"><i class="fab fa-twitter fa-2x"></i></a>
-            </li>
-            <li><a href="https://www.facebook.com/andiphoenix" class="facebook"><i
-                        class="fab fa-facebook fa-2x"></i></a></li>
-        </ul>
-
-    </aside>
+    </section>    
     <footer class="site-footer">
-        <div class="wrapper">
-            <nav class="meta-nav">
-                <ul class="meta-nav-list">
-                    <li><a href="#">Impressum</a></li>
-                    <li><a href="#">Datenschutz</a></li>
-                    <li><a href="#oben">Nach oben</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-
+            <div class="wrapper">
+                <nav class="footernav">
+                    <ul class="footerlist">
+                        <li>
+                            <p>© by Andi Phoenix</p>
+                        </li>
+                        
+                        <li><a href="#oben">Nach oben</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
 </body>
-
 </html>

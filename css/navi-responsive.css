@@ -3,9 +3,9 @@
 
     .menubutton {
 
-        display: block;
-        background-color: rgb(181, 49, 49);
-        color: white;
+        display: flex;
+       width: 3.8rem;
+        color: rgb(2, 66, 105);
 
         font-family: inherit;
         font-size: inherit;
@@ -13,13 +13,18 @@
 
         padding: 0.5rem 1rem;
         border-radius: 0.25rem;
-        margin: 0 1rem 0.5rem 1rem;
+        margin: auto;
 
         animation-name: lights;
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
         animation-direction: alternate;
+    }
+
+    .menubutton i {
+        margin: auto;
+        font-size: 1.7rem;
     }
 
     .site-nav > .wrapper {
@@ -27,36 +32,18 @@
     }
 
 
-    .site-nav {
+    .nav {
         position: -webkit-sticky;
-        position: sticky;
+        position: fixed;
+        right: 5%;
         top: 0.5em;
-
-      
-
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
-background: #f3c5bd; /* Old browsers */
-background: -moz-linear-gradient(top,  #f3c5bd 0%, #e86c57 50%, #A60A0A 51%, #ff6600 75%, #A60A0A 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #f3c5bd 0%,#e86c57 50%,#A60A0A 51%,#ff6600 75%,#A60A0A 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #f3c5bd 0%,#e86c57 50%,#A60A0A 51%,#ff6600 75%,#A60A0A 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
-
-
-
-
-
-
-     /*   box-shadow: 1px 1px 20px 5px rgba(5, 238, 255, 0.673); */
-        border: 4px groove white;
-
+        z-index: 1;
+    
+        
         padding: 0.5rem 0 0 0;
         margin-bottom: 1em;
 
-        animation-name: lights;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
+       
     }
 
     @keyframes lights {
@@ -67,37 +54,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', end
             0%   {box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.673);}
             100%  {box-shadow: 1px 1px 20px 5px rgb(255, 255, 255);} }
 
+    .navlist {
+        display: flex;
 
+        padding: 0;
+        margin: 0;
+        justify-content: end;
+        flex-direction: row;
+       /* flex-wrap: wrap; */
+        flex-flow: column;
+    }
+
+    .navlist li:first-child {
+        padding-top: 1rem;
+    }
     .site-nav-list {
         display: flex;
 
         padding: 0;
         margin: 0;
-
+        justify-content: end;
         flex-direction: row;
        /* flex-wrap: wrap; */
         flex-flow: column;
 
     }
 
-    .site-nav-list a {
+    .navlist a {
         
         display: block;
         color: white;
         text-decoration: none;
         min-width: 80px;
        /* text-align: center; */
-       background: #f3c5bd; /* Old browsers */
-       background: -moz-linear-gradient(top,  #f3c5bd 0%, #e86c57 50%, #A60A0A 51%, #ff6600 75%, #A60A0A 100%); /* FF3.6-15 */
-       background: -webkit-linear-gradient(top,  #f3c5bd 0%,#e86c57 50%,#A60A0A 51%,#ff6600 75%,#A60A0A 100%); /* Chrome10-25,Safari5.1-6 */
-       background: linear-gradient(to bottom,  #f3c5bd 0%,#e86c57 50%,#A60A0A 51%,#ff6600 75%,#A60A0A 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
         padding: 0.5rem 1rem;
 
     }
     
     .site-nav-list a.you-are-here {
-        text-decoration: underline;
+        text-decoration: none;
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffb76b+12,ff7c00+32,ffb76b+62,ff7f04+100 */
         background: #f3c5bd; /* Old browsers */
         background: -moz-linear-gradient(top,  #f3c5bd 0%, #e86c57 50%, #A60A0A 51%, #ff6600 75%, #F0CD8B 100%); /* FF3.6-15 */
@@ -109,7 +104,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', end
     }
     .site-nav-list a:hover,
     .site-nav-list a:focus {
-        text-decoration: underline;
+        text-decoration: none;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffb76b+12,ff7c00+32,ffb76b+62,ff7f04+100 */
     background: #f3c5bd; /* Old browsers */
     background: -moz-linear-gradient(top,  #f3c5bd 0%, #e86c57 50%, #A60A0A 51%, #ff6600 75%, #F0CD8B 100%); /* FF3.6-15 */
@@ -121,35 +116,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', end
     }
 
     .site-nav-list a:active {
-        text-decoration: underline;
+        text-decoration: none;
         background-color: rgb(37, 230, 244); 
         color: white;
     }
 
-    .site-nav-list li {
+    .navlist li {
       /*  display: inline-block; */
         list-style: none;
     }
     
-    .site-nav-list {
+    .navlist {
        max-height: 0;
        overflow:hidden;
     }
 
     /* Die Navigationsliste ein und ausblenden lassen */
 
-    .show-menu + .site-nav-list {
+    .show-menu + .navlist {
         max-height: 100rem;
         transition: 1000ms ease-in-out;
     }
 
-    /* Media Query hinzufügen für breite Bildschirme */
+    /* Media Query hinzufügen für breite Bildschirme 
 
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 3000px) {
 
         .menubutton { display: none; }
 
-        .site-nav-list {
+        .navlist {
             max-height: none;
             overflow: auto;
             transition: none;
@@ -161,17 +156,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', end
         .site-nav { padding: 0; }
         .site-nav > .wrapper { padding: 0 1rem; }
 
-        .site-nav-list li { 
+        .navlist li { 
             display: inline-block; 
             flex: 1;
             text-align: center;
-            border-right: 1px solid rgba(5, 238, 255, 0.673);
+            
         }
 
-        .site-nav-list li:first-child {
+       /* .site-nav-list li:first-child {
 
-            border-left: 1px solid rgba(5, 238, 255, 0.673);
-        }
+            
+        }*/
 
 
     }

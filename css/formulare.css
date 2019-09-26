@@ -7,16 +7,23 @@
     }
     
     form div {
-        margin-bottom: 1em;
+        margin: 1rem 0;
         display: flex;
         flex-flow: wrap;
+        justify-content: center
     }
     
+    .submitbuttondiv {
+        display:flex;
+        margin: auto;
+        max-width: 10rem;
+    }
+
    .contactformsection {
         color: white;
         padding: 1rem;
-        text-align: left;
-        background-color:  rgba(166, 10, 10, 0.475);
+        text-align: center;
+        background-color: rgb(2, 66, 105);
         margin: 1em 0;
         flex: 1;
     }   
@@ -24,10 +31,10 @@
     .contactformsection input[type="text"],
     .contactformsection input[type="email"],
     .contactformsection textarea {
-        color: white;
-        padding: 1rem;
-        text-align: center;
-
+        color: black;
+        padding: 0.5rem;
+        text-align: left;
+        font-size: 1rem;
         margin: 0.5em 0;
         border: 1px solid #ddd;
         border-radius: 0.25rem;
@@ -46,8 +53,11 @@
         cursor: pointer;
         color: white;
         background-color: rgba(5, 5, 5, 0.7);
-        box-shadow: 1px 1px 100px 2px white;
-        border-radius: 0.25rem;
+        animation-name: lights2;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; 
         padding: 0.5rem;
         flex: 1;
     }

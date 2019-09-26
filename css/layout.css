@@ -1,8 +1,9 @@
 @media screen {
 
     html {
-        background-color: black;
-        background-image: url(htmlbgi.jpg);
+        height: 100%;
+        background-color: rgb(2, 66, 105);
+       /* background-image: url(htmlbgi.jpg);*/
         background-position: center;
         background-attachment: fixed; 
        
@@ -10,15 +11,238 @@
 
 
     body {
-        min-height: 100vh;
+        min-height: 100%;
         margin: 0 auto;
         display: flex;
         flex-flow: column;
         min-width: 240px;
-        max-width: 960px;
         
-        
+    
     }
+    .parallax1 {
+        /* The image used */
+        background-image: url(../pics/4edit.jpg);
+      
+        /* Set a specific height */
+        height: 100vh;
+        opacity: 0.8;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media screen and (max-width: 500px) {   
+        .parallax1 {
+            /* The image used */
+            background-image: url(../pics/6.jpg);
+         
+        }
+        .logo {
+            opacity: 1;
+            color: white;
+            text-shadow: 3px 3px 0px black;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+    }
+      
+    .parallax2 {
+        /* The image used */
+        background-image: url(../pics/1.jpg);
+      
+        /* Set a specific height */
+        height: 50vh;
+        opacity: 0.8;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: flex;
+    
+      
+      }
+
+    .parallax3 {
+    /* The image used */
+    background-image: url(../pics/3.jpg);
+    
+    /* Set a specific height */
+    height: 30vh;
+    opacity: 0.8;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    }
+    .parallax4 {
+        /* The image used */
+        background-image: url(../pics/11.jpg);
+        
+        /* Set a specific height */
+        height: 50vh;
+        opacity: 0.8;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        }
+    .parallax5 {
+        /* The image used */
+        background-image: url(../pics/12.jpg);
+        
+        /* Set a specific height */
+        height: 50vh;
+        opacity: 0.8;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        }
+
+        .divarticle {
+            
+            min-width: 320px;
+            max-width: 720px;
+            padding: 0 1rem;
+            margin: 0 auto;
+        }
+
+
+    .Logoheader {
+        position: absolute;
+        left: 15%;
+        top: 27%;
+       
+        text-align: left;
+        color: white;
+    }
+    .logo {
+        opacity: 1;
+        color: white;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+    article {
+        opacity: 0.8;
+        padding: 2rem;
+        text-align: center;
+        color: white;
+        background-color: rgb(2, 66, 105);
+    }
+    .text2 {
+        margin: auto;
+        color: white;
+        text-shadow: 3px 3px 0px black;
+        font-size: 25px;
+        text-align: center;
+    }
+    .text3 {
+        text-shadow: 3px 3px 0px black;
+        color: rgb(255, 255, 255);
+        margin: auto;
+        font-size: 25px;
+        text-align: center;
+    }
+    .iconbar {
+        position: static;
+        text-align: center;
+        display: flex;
+        margin: auto;
+        height: 161px;
+        top: 1rem; 
+    }
+    
+
+    .icon-bar ul, .icon-bar-adress ul {
+        list-style: none; 
+        padding: 0; 
+        margin: 1.5rem 0; 
+        display: flex;
+        justify-content: center;
+      }
+      .iconbar ul {
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+        display:flex;
+        flex-flow: wrap;
+        justify-content: space-evenly;
+      }
+
+
+      .icon-bar ul li {
+        animation-name: lights2;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; 
+        margin: 1rem;
+    }
+  
+      /* Style the links in the icon bar */
+      .icon-bar a, .backdoor a {
+        display: block;
+        text-align: center;
+        color: white;
+        padding: 1rem;
+      }
+
+      .backdoor {
+          margin: 2rem auto;
+          max-width: 90px;
+          
+      }
+  
+      /* Farbwerte siehe https://brandcolors.net/ */ 
+      .icon-bar .linkedin {
+        background: #007bb5;
+        color: white;
+      }
+      
+      .icon-bar .twitter {
+        background: #55ACEE;
+        color: white;
+      }
+  
+      .icon-bar .facebook {
+        background: #3B5998;
+        color: white;
+      }
+}
+
+/* Color Theme Swatches in Hex */
+.Stadion-Mal-1-hex { color: #047FA4; }
+.Stadion-Mal-2-hex { color: #95DBCA; }
+.Stadion-Mal-3-hex { color: #025169; }
+.Stadion-Mal-4-hex { color: #82BFD2; }
+.Stadion-Mal-5-hex { color: #AD1F23; }
+
+/* Color Theme Swatches in RGBA */
+.Stadion-Mal-1-rgba { color: rgba(4, 127, 164, 1); }
+.Stadion-Mal-2-rgba { color: rgba(149, 219, 202, 1); }
+.Stadion-Mal-3-rgba { color: rgba(2, 81, 105, 1); }
+.Stadion-Mal-4-rgba { color: rgba(130, 191, 210, 1); }
+.Stadion-Mal-5-rgba { color: rgba(173, 31, 35, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Stadion-Mal-1-hsla { color: hsla(193, 95, 32, 1); }
+.Stadion-Mal-2-hsla { color: hsla(165, 49, 72, 1); }
+.Stadion-Mal-3-hsla { color: hsla(193, 96, 20, 1); }
+.Stadion-Mal-4-hsla { color: hsla(194, 47, 66, 1); }
+.Stadion-Mal-5-hsla { color: hsla(358, 69, 40, 1); }
 
 
 
@@ -39,20 +263,12 @@
         text-decoration: none;
     }
 
-    .site-footer {
-        background: #f3c5bd; /* Old browsers */
-background: -moz-linear-gradient(top,  #f3c5bd 0%, #e86c57 50%, #A60A0A 51%, #ff6600 75%, #A60A0A 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #f3c5bd 0%,#e86c57 50%,#A60A0A 51%,#ff6600 75%,#A60A0A 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #f3c5bd 0%,#e86c57 50%,#A60A0A 51%,#ff6600 75%,#A60A0A 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
-        border: 4px groove white;
-        margin-top: auto;
-        animation-name: lights;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
+    .site-footer ul {
+        display: flex;
+
     }
+    
+
     
     .site-footer {font-size: smaller;}
    

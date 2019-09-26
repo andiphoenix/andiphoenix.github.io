@@ -238,63 +238,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     
    
 
-    .icon-bar {
-        position: fixed;
-        top: 50%;
-        left: 0;
-        top: 1rem; 
-    }
     
-
-    .icon-bar ul, .icon-bar-adress ul {
-        list-style: none; 
-        padding: 0; 
-        margin: 0; 
-      }
-      .icon-bar-adress ul {
-          display:flex;
-          flex-flow:wrap;
-          justify-content: space-evenly;
-      }
-
-
-      .icon-bar ul li {
-        animation-name: lights2;
-        animation-duration: 0.5s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-direction: alternate; }
-  
-      /* Style the links in the icon bar */
-      .icon-bar a, .backdoor a {
-        display: block;
-        text-align: center;
-        color: white;
-        padding: 1rem;
-      }
-
-      .backdoor {
-          margin: 2rem auto;
-          max-width: 90px;
-          
-      }
-  
-      /* Farbwerte siehe https://brandcolors.net/ */ 
-      .icon-bar .linkedin {
-        background: #007bb5;
-        color: white;
-      }
-      
-      .icon-bar .twitter {
-        background: #55ACEE;
-        color: white;
-      }
-  
-      .icon-bar .facebook {
-        background: #3B5998;
-        color: white;
-      }
-}
       /* 
 
       overflow:hidden fürs umgebene Element um Flow zu schließen
@@ -329,55 +273,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 /* Media Query für kleinere Bildschirme */
 
-@media screen and (max-width: 821px) {
 
-.icon-bar {
-   position: static;
-  
-}
-
-
-.icon-bar ul {
-    display: flex;
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
-    justify-content: end;
-  }
-
-  .icon-bar ul li {
-        animation-name: lights2;
-        animation-duration: 0.5s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-direction: alternate; 
-  }
-
-  /* Style the links in the icon bar */
-  .icon-bar a {
-    display: block;
-    text-align: center;
-    color: white;
-    padding: 1rem;
-  }
-
-  /* Farbwerte siehe https://brandcolors.net/ */ 
-  .icon-bar .linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  .icon-bar .twitter {
-    background: #55ACEE;
-    color: white;
-  }
-
-  .icon-bar .facebook {
-    background: #3B5998;
-    color: white;
-  }
-
-}
 
     .calculator {
         width: 400px;
