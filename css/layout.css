@@ -33,13 +33,16 @@
         
         background-repeat: no-repeat;
         background-size: cover;
+        -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
     }
 
     @media screen and (max-width: 500px) {   
         .parallax1 {
             /* The image used */
             background-image: url(../pics/6.jpg);
-            width: 100vw;
+            
          
         }
         .logo {
@@ -111,6 +114,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
+        
         }
 
         .divarticle {
