@@ -42,7 +42,7 @@
         .parallax1 {
             /* The image used */
             background-image: url(../pics/6.jpg);
-            background-size: 100%;
+            
          
         }
         .logo {
@@ -64,7 +64,7 @@
         opacity: 0.8;
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
-        background-position: center;
+        background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
 
