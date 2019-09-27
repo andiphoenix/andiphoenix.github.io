@@ -39,6 +39,7 @@
         .parallax1 {
             /* The image used */
             background-image: url(../pics/6.jpg);
+            width: 100vw;
          
         }
         .logo {
@@ -54,7 +55,7 @@
     .parallax2 {
         /* The image used */
         background-image: url(../pics/1.jpg);
-      
+        width: 100vw;
         /* Set a specific height */
         height: 50vh;
         opacity: 0.8;
@@ -72,7 +73,7 @@
     .parallax3 {
     /* The image used */
     background-image: url(../pics/3.jpg);
-    
+    width: 100vw;
     /* Set a specific height */
     height: 30vh;
     opacity: 0.8;
@@ -86,7 +87,7 @@
     .parallax4 {
         /* The image used */
         background-image: url(../pics/11.jpg);
-        
+        width: 100vw;
         /* Set a specific height */
         height: 50vh;
         opacity: 0.8;
@@ -100,7 +101,7 @@
     .parallax5 {
         /* The image used */
         background-image: url(../pics/12.jpg);
-        
+        width: 100vw;
         /* Set a specific height */
         height: 50vh;
         opacity: 0.8;
