@@ -49,7 +49,7 @@
         background-position: center center;
         
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -58,7 +58,7 @@
     @media screen and (max-width: 500px) {   
         .parallax1 {
             /* The image used */
-            background-image: url(../pics/6.jpg);
+            background-image: url(../pics/6sm.jpg);
         }
         .parallax2 {
             /* The image used */
@@ -101,7 +101,7 @@
         background-attachment: fixed;
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
 
         display: flex;
     
@@ -119,7 +119,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     }
     .parallax4 {
@@ -133,7 +133,7 @@
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         display: flex;
         }
     .parallax5 {
@@ -147,7 +147,7 @@
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         display: flex;
         
         }
