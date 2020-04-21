@@ -103,7 +103,7 @@
         position: absolute; 
         left:10px;
         height: 4px; width: 45px; 
-        background: rgb(0, 0, 0); border-radius: 2px;
+        background: #025169; border-radius: 2px;
         display: block; 
         transition: 0.5s; 
         transform-origin: center; 
