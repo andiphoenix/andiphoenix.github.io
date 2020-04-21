@@ -41,7 +41,7 @@
                         
       
         /* Set a specific height */
-        width: 100%;
+        width: 100vw ;
         height: 100vh;
         opacity: 0.8;
         /* Create the parallax scrolling effect */
@@ -49,7 +49,7 @@
         background-position: center center;
         
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -59,6 +59,22 @@
         .parallax1 {
             /* The image used */
             background-image: url(../pics/6.jpg);
+        }
+        .parallax2 {
+            /* The image used */
+            background-image: url(../pics/1.jpg);
+        }
+        .parallax3 {
+            /* The image used */
+            background-image: url(../pics/3.jpg);
+        }
+        .parallax4 {
+            /* The image used */
+            background-image: url(../pics/11.jpg);
+        }
+        .parallax5 {
+            /* The image used */
+            background-image: url(../pics/12.jpg);
         }
         .logo {
             opacity: 1;
@@ -85,7 +101,7 @@
         background-attachment: fixed;
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
 
         display: flex;
     
@@ -103,7 +119,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     }
     .parallax4 {
@@ -117,7 +133,7 @@
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         display: flex;
         }
     .parallax5 {
@@ -131,7 +147,7 @@
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         display: flex;
         
         }
