@@ -69,7 +69,6 @@
         .Logoheader {
             max-width: 360px;
             top: 55%;
-
         }
     }
       
@@ -150,6 +149,11 @@
         text-align: center;
         color: white;
         background-color: rgb(2, 66, 105);
+    }
+
+    .port-article {
+        padding:  2rem 0;
+
     }
     .text2 {
         margin: auto;
