@@ -26,13 +26,23 @@
 <body>
     <nav class="nav">
             <div>
-                <button class="menubutton" onclick="this.classList.toggle('show-menu')"><i
-                        class="fas fa-bars"></i>&nbsp;</button>
-                <ul class="navlist">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#social">Socials</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+               <!-- PREVIOUSLY
+                   <button class="menubutton" onclick="this.classList.toggle('show-menu')">
+                    <i class="fas fa-bars"></i>&nbsp;</button>-->
+                    <div>
+                        <input type="checkbox" id="hamburg">
+                        <label for="hamburg" class="hamburg" >
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </label>
+                    </div>
+                
+                    <ul class="navlist">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#social">Socials</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
     
                 </ul>
             </div>
@@ -50,7 +60,8 @@
         <div class="divarticle">
             
             <h2>Hello</h2>
-            <p>I am a Berlin-based Front-End Wed Developer:<br>Self-taught and bootcamp certified.<br>
+            <p>I am a Berlin-based Front-End Web Developer:<br>I am Self-taught. No Bootcamp. No Bullshit. <br> 
+                My motivation comes from hunger for progress.<br>
                 Portfolio is following shortly.<br>
                 Meanwhile please check my socials and get in touch with me. <br>
 
@@ -83,36 +94,61 @@
         </section>
     <div class="parallax3">
             <div class="text3">                
-                <p style="letter-spacing: 10px; margin: 0;">Self-Made</p>           
+                <p style="letter-spacing: 10px; margin: 0 auto;">Self-Made</p>           
             </div>       
     </div>
-    <article class="article" id="about">
+    <article class="port-article" id="portfolio">
             <div class="divarticle">                
-                <h2 class="visually-hidden">Hello</h2>
-                <p>My name is Andi Phoenix.<br><br>
-                    Born in Kyrgyzstan and raised in a small city called Detmold, NRW.<br>
-                    I used to be a calm and shy boy in my teenage times,<br>
-                    only in video games I've felt comfortable enough to be me and let out<br>
-                    all the thoughts that defined me.<br>
-                    This changed dramaticaly when I moved to Cologne to study Event-Management.<br>
-                    My interest in Games vanished instantly when I found out that I am actually into guys
-                    and since then my self-esteem developed in immense speed.<br>
-                    I've found the love of my life quickly and so I became the person I am today.<br>
-                    I've been playing music instruments since I was eight years old<br>
-                    and I've been playing in bands for 10 years now.<br>
-                    I sing in my band "Desasterkids" for six years now and we are on tour regularly.<br><br>
-                    Some weeks ago I decided to learn web programming because I was unhappy with<br>
-                    the way my career was going and I've felt like I needed to learn something<br>
-                    completly new and start a new chapter in my life.<br>
-                    This is my very first website. The beginning of a new path. A new life.<br>
-                    My legacy.</p>
+                <h2>Portfolio</h2>
+                    
+                    
+                       <!-- Calculator-->
+        <h4 style="text-align: center; margin-top: 3rem;">Simple Calculator</h4>
+
+
+
+        <div class="calculator">
+            
+            <section class="calcscreen">
+                <p style="margin: 0rem;">0</p>
+            </section>
+
+            <section class="calcbuttons">
+                <div class="box boxC">C</div>
+                <div class="box">&#11013;</div>
+                <div class="box countbox">&#247;</div>
+                <div class="box">7</div>
+                <div class="box box0">0</div>
+                <div class="box">8</div>
+                <div class="box">9</div>
+                <div class="box countbox">&#xD7;</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box countbox">-</div>
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box countbox">+</div>
+                <div class="box countbox">=</div>
+            </section>
+        </div>
+        <script src="./JS/calculator.js"></script>
+
+
+
+
+
+
+
+
             </div>
         </article>
 
     <div class="parallax4">
             <div class="text3">                
-                <p style="letter-spacing: 10px; margin: 0;">
-                   <strong>Engagement</strong>
+                <p style="letter-spacing: 10px; margin: 0 auto;">
+                   <strong>Commitment</strong>
                 </p>           
             </div>       
 
@@ -171,10 +207,19 @@
                             <p>© by Andi Phoenix</p>
                         </li>
                         
-                        <li><a href="#oben">Nach oben</a></li>
+                        <li><a href="#oben">UP &#8682;</a></li>
                     </ul>
                 </nav>
             </div>
         </footer>
+        <script>
+            const hamburger = document.querySelector(".hamburg");
+            const navlist = document.querySelector(".navlist");
+            hamburger.onclick = function() {
+               this.classList.toggle ("checked");
+               navlist.classList.toggle("show-menu")
+            }
+         </script>
+       
 </body>
 </html>
