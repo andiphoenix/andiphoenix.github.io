@@ -1,0 +1,36 @@
+@media screen {
+
+    .footerlist {
+        display: flex;
+        list-style-type: none;
+      
+        margin: 0;
+        padding: 0.5rem;
+        color: white;
+        margin-bottom:0;
+    }
+    
+
+    .footerlist li {
+        margin-right: 1rem;
+
+    }
+
+    .footerlist li:last-child {
+
+        margin-right: 0;
+        margin-left: auto;
+
+    }
+
+    .footerlist li:first-child {
+        margin-left: 4rem;
+    }
+
+
+    
+
+    
+
+
+}   /* Ende @media */

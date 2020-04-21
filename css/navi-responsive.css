@@ -4,7 +4,7 @@
     .menubutton {
 
         display: flex;
-       width: 3.8rem;
+        width: 3.8rem;
         color: rgb(2, 66, 105);
 
         font-family: inherit;
@@ -13,7 +13,7 @@
 
         padding: 0.5rem 1rem;
         border-radius: 0.25rem;
-        margin: auto;
+        margin: 1rem auto;
 
         animation-name: lights;
         animation-duration: 2s;
@@ -91,29 +91,6 @@
 
     }
     
-    .site-nav-list a.you-are-here {
-        text-decoration: none;
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffb76b+12,ff7c00+32,ffb76b+62,ff7f04+100 */
-        background: #f3c5bd; /* Old browsers */
-        background: -moz-linear-gradient(top,  #f3c5bd 0%, #e86c57 50%, #A60A0A 51%, #ff6600 75%, #F0CD8B 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  #f3c5bd 0%,#e86c57 50%,#A60A0A 51%,#ff6600 75%,#F0CD8B 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  #f3c5bd 0%,#e86c57 50%,#A60A0A 51%,#ff6600 75%,#F0CD8B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
-
-        color: white;
-    }
-    .site-nav-list a:hover,
-    .site-nav-list a:focus {
-        text-decoration: none;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffb76b+12,ff7c00+32,ffb76b+62,ff7f04+100 */
-    background: #f3c5bd; /* Old browsers */
-    background: -moz-linear-gradient(top,  #f3c5bd 0%, #e86c57 50%, #A60A0A 51%, #ff6600 75%, #F0CD8B 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #f3c5bd 0%,#e86c57 50%,#A60A0A 51%,#ff6600 75%,#F0CD8B 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #f3c5bd 0%,#e86c57 50%,#A60A0A 51%,#ff6600 75%,#F0CD8B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
-
-        color: white;
-    }
 
     .site-nav-list a:active {
         text-decoration: none;
@@ -138,38 +115,7 @@
         transition: 1000ms ease-in-out;
     }
 
-    /* Media Query hinzufügen für breite Bildschirme 
-
-    @media screen and (max-width: 3000px) {
-
-        .menubutton { display: none; }
-
-        .navlist {
-            max-height: none;
-            overflow: auto;
-            transition: none;
-
-            flex-flow: row;
-            flex-wrap: wrap;
-        }
-
-        .site-nav { padding: 0; }
-        .site-nav > .wrapper { padding: 0 1rem; }
-
-        .navlist li { 
-            display: inline-block; 
-            flex: 1;
-            text-align: center;
-            
-        }
-
-       /* .site-nav-list li:first-child {
-
-            
-        }*/
-
-
-    }
+}
 
 
 
@@ -177,4 +123,4 @@
 
 
 
-} /* Ende @media */
+ /* Ende @media */
