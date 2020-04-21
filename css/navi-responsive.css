@@ -1,37 +1,6 @@
 @media screen {
 
 
-    .menubutton {
-
-        display: flex;
-        width: 3.8rem;
-        color: rgb(2, 66, 105);
-
-        font-family: inherit;
-        font-size: inherit;
-        text-align: center;
-
-        padding: 0.5rem 1rem;
-        border-radius: 0.25rem;
-        margin: 1rem auto;
-
-        animation-name: lights;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-    }
-
-    .menubutton i {
-        margin: auto;
-        font-size: 1.7rem;
-    }
-
-    .site-nav > .wrapper {
-        padding: 0 1rem;
-    }
-
-
     .nav {
         position: -webkit-sticky;
         position: fixed;
@@ -66,19 +35,9 @@
     }
 
     .navlist li:first-child {
-        padding-top: 1rem;
+        margin-top: 1rem;
     }
-    .site-nav-list {
-        display: flex;
 
-        padding: 0;
-        margin: 0;
-        justify-content: end;
-        flex-direction: row;
-       /* flex-wrap: wrap; */
-        flex-flow: column;
-
-    }
 
     .navlist a {
         
@@ -92,10 +51,13 @@
     }
     
 
-    .site-nav-list a:active {
+    .navlist a:hover {
         text-decoration: none;
-        background-color: rgb(37, 230, 244); 
+        background-color: rgba(4, 127, 164, 0.082); 
         color: white;
+    }
+    .navlist a:active {
+        background-color: rgba(4, 127, 164, 0.296); 
     }
 
     .navlist li {
@@ -110,17 +72,61 @@
 
     /* Die Navigationsliste ein und ausblenden lassen */
 
-    .show-menu + .navlist {
+    .show-menu  {
         max-height: 100rem;
-        transition: 1000ms ease-in-out;
+        transition: 2000ms ease-in-out ;
+
     }
+    
+
+
+    .hamburg { 
+        display: block;
+        background: rgb(255, 255, 255);
+        width: 65px; height: 50px; 
+        position: relative; 
+        margin-top: 1rem;
+        margin-left: auto; margin-right: auto;
+        border-radius: 5px; 
+        transition: border-radius .5s;
+        animation-name: lights;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+     }
+
+     input#hamburg {display:none}
+
+
+     .line { 
+        position: absolute; 
+        left:10px;
+        height: 4px; width: 45px; 
+        background: rgb(0, 0, 0); border-radius: 2px;
+        display: block; 
+        transition: 0.5s; 
+        transform-origin: center; 
+     }
+     
+     .line:nth-child(1) { top: 12px; }
+     .line:nth-child(2) { top: 24px; }
+     .line:nth-child(3) { top: 36px; }
+     
+     .hamburg.checked .line:nth-child(1){
+        transform: translateY(12px) rotate(-45deg);
+     }
+     
+     .hamburg.checked .line:nth-child(2){
+        opacity:0;
+     }
+     
+     .hamburg.checked .line:nth-child(3){
+        transform: translateY(-12px) rotate(45deg);
+     }
+
 
 }
-
-
-
-
-
 
 
  /* Ende @media */

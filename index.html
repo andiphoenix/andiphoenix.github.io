@@ -27,13 +27,23 @@
 <body>
     <nav class="nav">
             <div>
-                <button class="menubutton" onclick="this.classList.toggle('show-menu')"><i
-                        class="fas fa-bars"></i>&nbsp;</button>
-                <ul class="navlist">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#social">Socials</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+               <!-- PREVIOUSLY
+                   <button class="menubutton" onclick="this.classList.toggle('show-menu')">
+                    <i class="fas fa-bars"></i>&nbsp;</button>-->
+                    <div>
+                        <input type="checkbox" id="hamburg">
+                        <label for="hamburg" class="hamburg" >
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </label>
+                    </div>
+                
+                    <ul class="navlist">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#social">Socials</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
     
                 </ul>
             </div>
@@ -163,5 +173,14 @@
                 </nav>
             </div>
         </footer>
+        <script>
+            const hamburger = document.querySelector(".hamburg");
+            const navlist = document.querySelector(".navlist");
+            hamburger.onclick = function() {
+               this.classList.toggle ("checked");
+               navlist.classList.toggle("show-menu")
+            }
+         </script>
+       
 </body>
 </html>
