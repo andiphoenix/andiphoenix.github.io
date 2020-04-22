@@ -59,16 +59,22 @@
         .parallax1 {
             /* The image used */
             background-image: url(../pics/6sm.jpg);
-            position: absolute;
-            min-width: 100%;
-            left: 0px;
-            background-color: rgba(0, 0, 0, 0);
-            background-repeat: repeat;
+            
+            width: 100vh;
+            
+        
+
+
             background-attachment: fixed;
-            background-position: 50% 50%;
+            background-position: center center;
+            
+            background-repeat: no-repeat;
             background-size: cover;
+            -webkit-background-size: none;
+            -moz-background-size: none;
+            -o-background-size: none;
         }
-        }
+        
         .parallax2 {
             /* The image used */
             background-image: url(../pics/1.jpg);
@@ -264,26 +270,26 @@
       }
 
 
-/* Color Theme Swatches in Hex */
-.Stadion-Mal-1-hex { color: #047FA4; }
-.Stadion-Mal-2-hex { color: #95DBCA; }
-.Stadion-Mal-3-hex { color: #025169; }
-.Stadion-Mal-4-hex { color: #82BFD2; }
-.Stadion-Mal-5-hex { color: #AD1F23; }
+    /* Color Theme Swatches in Hex */
+    .Stadion-Mal-1-hex { color: #047FA4; }
+    .Stadion-Mal-2-hex { color: #95DBCA; }
+    .Stadion-Mal-3-hex { color: #025169; }
+    .Stadion-Mal-4-hex { color: #82BFD2; }
+    .Stadion-Mal-5-hex { color: #AD1F23; }
 
-/* Color Theme Swatches in RGBA */
-.Stadion-Mal-1-rgba { color: rgba(4, 127, 164, 1); }
-.Stadion-Mal-2-rgba { color: rgba(149, 219, 202, 1); }
-.Stadion-Mal-3-rgba { color: rgba(2, 81, 105, 1); }
-.Stadion-Mal-4-rgba { color: rgba(130, 191, 210, 1); }
-.Stadion-Mal-5-rgba { color: rgba(173, 31, 35, 1); }
+    /* Color Theme Swatches in RGBA */
+    .Stadion-Mal-1-rgba { color: rgba(4, 127, 164, 1); }
+    .Stadion-Mal-2-rgba { color: rgba(149, 219, 202, 1); }
+    .Stadion-Mal-3-rgba { color: rgba(2, 81, 105, 1); }
+    .Stadion-Mal-4-rgba { color: rgba(130, 191, 210, 1); }
+    .Stadion-Mal-5-rgba { color: rgba(173, 31, 35, 1); }
 
-/* Color Theme Swatches in HSLA */
-.Stadion-Mal-1-hsla { color: hsla(193, 95, 32, 1); }
-.Stadion-Mal-2-hsla { color: hsla(165, 49, 72, 1); }
-.Stadion-Mal-3-hsla { color: hsla(193, 96, 20, 1); }
-.Stadion-Mal-4-hsla { color: hsla(194, 47, 66, 1); }
-.Stadion-Mal-5-hsla { color: hsla(358, 69, 40, 1); }
+    /* Color Theme Swatches in HSLA */
+    .Stadion-Mal-1-hsla { color: hsla(193, 95, 32, 1); }
+    .Stadion-Mal-2-hsla { color: hsla(165, 49, 72, 1); }
+    .Stadion-Mal-3-hsla { color: hsla(193, 96, 20, 1); }
+    .Stadion-Mal-4-hsla { color: hsla(194, 47, 66, 1); }
+    .Stadion-Mal-5-hsla { color: hsla(358, 69, 40, 1); }
 
 
 
@@ -342,4 +348,5 @@
         margin: 0 auto;
 
     }
+
 }
