@@ -350,13 +350,13 @@ only screen and ( min-resolution: 1.3dppx ) {
             display: flex;
             flex: 1 1 auto;
             justify-content: left;
-            align-items: center;
+            align-items: flex-start;
         }
     
         .Logoheader {
             position: absolute;
            margin-left: 2rem;
-           margin-top: 50rem;
+           margin-top: 10rem;
             text-align: left;
             color: white;
             z-index: 4;
