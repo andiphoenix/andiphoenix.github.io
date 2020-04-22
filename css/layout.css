@@ -356,7 +356,7 @@ only screen and ( min-resolution: 1.3dppx ) {
         .Logoheader {
             position: absolute;
            margin-left: 2rem;
-           margin-top: 20rem;
+           margin-top: 80rem;
             text-align: left;
             color: white;
             z-index: 4;
