@@ -349,7 +349,7 @@ only screen and ( min-resolution: 1.3dppx ) {
 
     .parallax2, .parallax3, .parallax4, .parallax5 {
         display: flex;
-        flex: 0 1 auto;
+        flex: 1 1 auto;
         justify-content: center;
         align-items: center;
     }
