@@ -331,7 +331,7 @@ only screen and ( min-resolution: 1.3dppx ) {
     img {
         display: block;
         z-index: 1;
-        height: auto;
+        
    
     }
     .parallax1 {
@@ -408,7 +408,7 @@ only screen and ( min-resolution: 1.3dppx ) {
     img {
         display: block;
         z-index: 1;
-        height: auto;
+       
     }
 
 
