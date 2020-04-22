@@ -316,12 +316,13 @@ only screen and ( min-resolution: 124.8dpi ),
 only screen and ( min-resolution: 1.3dppx ) {
 
     .parallax1, .parallax2, .parallax3, .parallax4, .parallax5 {
-        height: unset;
+        height: auto;
       
 }
     img {
         display: block;
         z-index: 1;
+        height: auto;
         
     }
 
