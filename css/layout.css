@@ -58,21 +58,14 @@
     @media screen and (max-width: 500px) {   
         .parallax1 {
             /* The image used */
-            background-image: url(../pics/6sm.jpg);
-            
-            width: 100vh;
-            
-        
-
-
+            background-image: url(../pics/6.jpg);
+            width: 500px;
             background-attachment: fixed;
             background-position: center center;
             
             background-repeat: no-repeat;
             background-size: cover;
-            -webkit-background-size: none;
-            -moz-background-size: none;
-            -o-background-size: none;
+        
         }
         
         .parallax2 {
