@@ -39,16 +39,17 @@
         font-size: 25px;
         letter-spacing: 10px;
     }
+    /*
     .parallax1 {
-        /* The image used */
+        /* The image used 
         background-image: url(../pics/4edit.jpg);
                         
       
-        /* Set a specific height */
+        /* Set a specific height 
         max-width: 100vw ;
         height: 100vh;
         opacity: 0.8;
-        /* Create the parallax scrolling effect */
+        /* Create the parallax scrolling effect 
         background-attachment: fixed;
         background-position: center center;
         
@@ -62,13 +63,13 @@
     
       
     .parallax2 {
-        /* The image used */
+        /* The image used 
         background-image: url(../pics/1.jpg);
         width: 100vw;
-        /* Set a specific height */
+        /* Set a specific height 
         height: 50vh;
         opacity: 0.8;
-        /* Create the parallax scrolling effect */
+        /* Create the parallax scrolling effect 
         background-attachment: fixed;
         background-position: center center;
         background-repeat: no-repeat;
@@ -80,13 +81,13 @@
       }
 
     .parallax3 {
-    /* The image used */
+    /* The image used 
     background-image: url(../pics/3.jpg);
     width: 100vw;
-    /* Set a specific height */
+    /* Set a specific height 
     height: 30vh;
     opacity: 0.8;
-    /* Create the parallax scrolling effect */
+    /* Create the parallax scrolling effect 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,13 +95,13 @@
     display: flex;
     }
     .parallax4 {
-        /* The image used */
+        /* The image used 
         background-image: url(../pics/11.jpg);
         width: 100vw;
-        /* Set a specific height */
+        /* Set a specific height 
         height: 50vh;
         opacity: 0.8;
-        /* Create the parallax scrolling effect */
+        /* Create the parallax scrolling effect 
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -108,20 +109,20 @@
         display: flex;
         }
     .parallax5 {
-        /* The image used */
+        /* The image used 
         background-image: url(../pics/12.jpg);
         width: 100vw;
-        /* Set a specific height */
+        /* Set a specific height 
         height: 50vh;
         opacity: 0.8;
-        /* Create the parallax scrolling effect */
+        /* Create the parallax scrolling effect 
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         
-        }
+        }*/
 
         .divarticle {
             
@@ -315,10 +316,10 @@ only screen and (         min-device-pixel-ratio: 1.3 ),
 only screen and ( min-resolution: 124.8dpi ),
 only screen and ( min-resolution: 1.3dppx ) {
 
-    .parallax1, .parallax2, .parallax3, .parallax4, .parallax5 {
+ /*   .parallax1, .parallax2, .parallax3, .parallax4, .parallax5 {
         height: auto;
       
-}
+}*/
     img {
         display: block;
         z-index: 1;
