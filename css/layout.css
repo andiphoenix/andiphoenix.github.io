@@ -24,20 +24,22 @@
     
     }
 
-    .Logoheader {
+   /* .Logoheader {
         position: absolute;
         left: 15%;
         top: 27%;
        
         text-align: left;
         color: white;
-    }
+    }*/
     .logo {
         opacity: 1;
         color: white;
         padding: 18px;
         font-size: 25px;
         letter-spacing: 10px;
+        color: white;
+        text-shadow: 3px 3px 0px black;
     }
     /*
     .parallax1 {
@@ -168,6 +170,7 @@
         margin: auto;
         height: 161px;
         top: 1rem; 
+        
     }
     
 
@@ -324,17 +327,45 @@ only screen and ( min-resolution: 1.3dppx ) {
         display: block;
         z-index: 1;
         height: auto;
-        
+   
+    }
+    .parallax1 {
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: left;
+        align-items: end;
     }
 
     .Logoheader {
         position: absolute;
-        left: 15%;
-        top: 55%;
-       
+       margin-left: 2rem;
+       margin-bottom: 4rem;
         text-align: left;
         color: white;
+        z-index: 4;
     }
+    @media screen and (min-width: 550px) {
+
+        .parallax1 {
+            display: flex;
+            flex: 1 1 auto;
+            justify-content: left;
+            align-items: center;
+        }
+    
+        .Logoheader {
+            position: absolute;
+           margin-left: 2rem;
+           margin-top: 20rem;
+            text-align: left;
+            color: white;
+            z-index: 4;
+        }
+
+
+
+    }
+
     .logo {
         opacity: 1;
         color: white;

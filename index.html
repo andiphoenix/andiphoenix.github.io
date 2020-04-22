@@ -38,7 +38,7 @@
                         </label>
                     </div>
                 
-                    <ul class="navlist">
+                    <ul class="navlist overflow">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#social">Socials</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
@@ -223,6 +223,9 @@
             hamburger.onclick = function() {
                this.classList.toggle ("checked");
                navlist.classList.toggle("show-menu")
+               navlist.classList.toggle("overflow")
+
+            
             }
          </script>
        
