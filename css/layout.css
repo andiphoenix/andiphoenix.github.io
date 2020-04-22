@@ -59,6 +59,15 @@
         .parallax1 {
             /* The image used */
             background-image: url(../pics/6sm.jpg);
+            position: absolute;
+            min-width: 100%;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0);
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: 50% 50%;
+            background-size: cover;
+        }
         }
         .parallax2 {
             /* The image used */
