@@ -1,5 +1,9 @@
 @media screen {
 
+    img {
+        display: none;
+    }
+
     html {
         height: 100%;
         background-color: rgb(2, 66, 105);
@@ -55,48 +59,7 @@
         -o-background-size: cover;
     }
    
-    @media screen and (max-width: 500px) {   
-        .parallax1 {
-            /* The image used */
-            background-image: url(../pics/6.jpg);
-            width: 500px;
-            background-attachment: fixed;
-            background-position: center center;
-            
-            background-repeat: no-repeat;
-            background-size: cover;
-        
-        }
-        
-        .parallax2 {
-            /* The image used */
-            background-image: url(../pics/1.jpg);
-        }
-        .parallax3 {
-            /* The image used */
-            background-image: url(../pics/3.jpg);
-        }
-        .parallax4 {
-            /* The image used */
-            background-image: url(../pics/11.jpg);
-        }
-        .parallax5 {
-            /* The image used */
-            background-image: url(../pics/12.jpg);
-        }
-        .logo {
-            opacity: 1;
-            color: white;
-            text-shadow: 3px 3px 0px black;
-            padding: 18px;
-            font-size: 25px;
-            letter-spacing: 10px;
-        }
-        .Logoheader {
-            max-width: 360px;
-            top: 55%;
-        }
-    }
+    
       
     .parallax2 {
         /* The image used */
@@ -183,6 +146,7 @@
 
     }
     .text2 {
+    
         margin: auto;
         color: white;
         text-shadow: 3px 3px 0px black;
@@ -341,5 +305,69 @@
         margin: 0 auto;
 
     }
+
+}
+
+@media only screen and ( -webkit-min-device-pixel-ratio: 1.3 ),
+only screen and (    min--moz-device-pixel-ratio: 1.3 ),
+only screen and (      -o-min-device-pixel-ratio: 2.6/2 ), /* returns 1.3, see Dev.Opera */
+only screen and (         min-device-pixel-ratio: 1.3 ),
+only screen and ( min-resolution: 124.8dpi ),
+only screen and ( min-resolution: 1.3dppx ) {
+
+    .parallax1, .parallax2, .parallax3, .parallax4, .parallax5 {
+        height: unset;
+      
+}
+    img {
+        display: block;
+        z-index: 1;
+        
+    }
+
+    .Logoheader {
+        position: absolute;
+        left: 15%;
+        top: 55%;
+       
+        text-align: left;
+        color: white;
+    }
+    .logo {
+        opacity: 1;
+        color: white;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+
+    .divarticle {
+        font-size: 18px;
+    }
+
+    .parallax2, .parallax3, .parallax4, .parallax5 {
+        display: flex;
+        flex: 1 1 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .text2 {
+        position: absolute;
+        margin: auto;
+       z-index: 3;
+    }
+    .text3 {
+            position: absolute;
+            margin: 10rem 0 0 0;
+           z-index: 3;
+    }
+       
+
+
+
+
+
+
+
 
 }
