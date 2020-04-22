@@ -1,0 +1,162 @@
+*  {
+    box-sizing: border-box;
+}
+
+.gallery-img {
+    display: none;
+    max-height: 600px;
+}
+
+.active {
+    display: block;
+}
+
+.image-gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.btn {
+    background-color: aqua;
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prev {
+    margin-right: 15px;
+}
+
+.btn:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.pic {
+    height: 600px !important; 
+   
+    
+    text-align: left;
+}
+.swiper-button-next, .swiper-button-prev {
+    top: 100%;
+}
+
+.brand {
+    margin: 0;
+    font-size: 50px;
+    cursor: grab;
+    z-index: 10;
+}
+
+select {
+    margin: 1rem 5rem;
+}
+.doggos {
+    display:flex;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotateZ(360deg)
+    }
+}
+
+.spinner {
+    font-size: 50px;
+    text-align: center;
+    animation: 2s spin linear;
+    display: none;
+}
+.dog-img {
+    display: none;
+}
+
+
+.show {
+    display: block;
+    margin: 0 auto;
+}
+
+.molewallpaper, .win {
+    
+    margin: 0 auto 3rem;
+    cursor: url(./cursor.png), default;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 700px;
+    display: flex;
+   flex-flow: wrap;
+   justify-content: center;
+   align-items: center;
+    
+}
+.hole {
+    background-color: black;
+    border-radius: 50%;
+    overflow: visible;
+   width: 180px;
+   height: 180px;
+  display: flex;
+  justify-content: center;
+   
+}
+.hole-container {
+   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+  width: 33%;
+  overflow: visible;
+ 
+}
+
+.hungry {
+    cursor: url(cursor-worm.png), default;
+}
+
+.gone,
+.hide {
+    display: none;
+}
+
+.worm {
+    max-width: 700px;
+    padding: 1rem;
+}
+.worm-container {
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+
+}
+
+.worm-box {
+    max-width:  700px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .molewallpaper {
+        display: none;
+    }
+}

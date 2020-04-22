@@ -1,6 +1,6 @@
 @media screen {
 
-    img {
+    .resp {
         display: none;
     }
 
@@ -323,6 +323,11 @@ only screen and ( min-resolution: 1.3dppx ) {
         height: auto;
       
 }*/
+.resp {
+    display: block;
+    z-index: 1;
+    height: auto;
+}
     img {
         display: block;
         z-index: 1;
@@ -344,6 +349,9 @@ only screen and ( min-resolution: 1.3dppx ) {
         color: white;
         z-index: 4;
     }
+
+
+
     @media screen and (min-width: 550px) {
 
         .parallax1 {
@@ -361,9 +369,6 @@ only screen and ( min-resolution: 1.3dppx ) {
             color: white;
             z-index: 4;
         }
-
-
-
     }
 
     .logo {
@@ -394,13 +399,111 @@ only screen and ( min-resolution: 1.3dppx ) {
             margin: 10rem 0 0 0;
            z-index: 3;
     }
+  
+}
+
+@media screen and (max-resolution: 1dppx) {
+
+    
+    img {
+        display: block;
+        z-index: 1;
+        height: auto;
+    }
+
+
+ .Logoheader {
+        position: absolute;
+        left: 15%;
+        top: 27%;
        
+        text-align: left;
+        color: white;
+    }
+    
+    
+    .parallax1 {
+  
+        background-image: url(../pics/4edit.jpg);
+                        
+      
 
+        max-width: 100vw ;
+        height: 100vh;
+        opacity: 0.8;
+    
+        background-attachment: fixed;
+        background-position: center center;
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+   
+    
+      
+    .parallax2 {
+       
+        background-image: url(../pics/1.jpg);
+        width: 100vw;
+       
+        height: 50vh;
+        opacity: 0.8;
+        
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
+        display: flex;
+    
+      
+      }
 
-
-
-
-
+    .parallax3 {
+    
+    background-image: url(../pics/3.jpg);
+    width: 100vw;
+ 
+    height: 30vh;
+    opacity: 0.8;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    }
+    .parallax4 {
+        
+        background-image: url(../pics/11.jpg);
+        width: 100vw;
+     
+        height: 50vh;
+        opacity: 0.8;
+       
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        }
+    .parallax5 {
+       
+        background-image: url(../pics/12.jpg);
+        width: 100vw;
+      
+        height: 50vh;
+        opacity: 0.8;
+        
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        
+        }
 
 }
