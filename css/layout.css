@@ -370,6 +370,20 @@ only screen and ( min-resolution: 1.3dppx ) {
             z-index: 4;
         }
     }
+    @media screen and (min-width: 1000px) {
+        .Logoheader {
+            position: absolute;
+            left: 15%;
+            top: 27%;
+          
+            text-align: left;
+            color: white;
+        }
+        
+       
+       
+    }
+
 
     .logo {
         opacity: 1;
